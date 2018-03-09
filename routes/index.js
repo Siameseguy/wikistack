@@ -1,12 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-var obj = {
-  name: 'joe'
-}
-
 router.get('/', function(req, res) {
-  res.render('index', { obj: obj.name })
+  res.render('index')
 })
 
 // router.get('/users/:name', function(req, res) {
